@@ -1,0 +1,30 @@
+<div ng-controller="displayInfoCtrl">
+   
+    <div class="row" >    	 
+	    <div class="col-xs-4 columnAlign"> 
+	    	<div class='text-center'>
+	    		<button type="button" class="btn btn-warning" ng-click='showFaculties()'>Show Faculties</button> 
+	    	</div>   		
+	        <p class="display bg-info" ng-repeat="item in result" ng-click='showGroups($event)'><b>{{item.faculty_name}}</b></p>  
+	    </div>
+	    <div class="col-xs-4 columnAlign">
+	    	<div>
+	    		<b>Group (Speciality):</b>   
+	    	</div>	
+	    	<p class="display bg-info" ng-repeat="item in resultGroup"><b>{{item.group_name}}</b></p>
+	    </div>
+
+	    <div class="col-xs-4 columnAlign"> 
+	     	<b>Students:</b>  
+	    </div>
+	</div>   
+	<div class="row">    	 
+	    <div class="col-xs-12">
+	     	<b>Student results:</b>  
+	    </div>
+	</div> 
+
+</div> 
+
+
+    

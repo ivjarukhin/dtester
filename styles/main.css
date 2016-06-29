@@ -1,0 +1,7 @@
+.infoBody {
+	width: 50%;
+}
+.columnAlign {
+	height: 300px;
+	overflow-y: auto;
+}
