@@ -10,6 +10,7 @@ angular.module("displayInfo", ['ui.router'])
         })
         .state('info', {
             url: '/info',
-            templateUrl: 'templates/university.html'      
+            templateUrl: 'templates/university.html',
+            controller: 'displayInfoCtrl'      
         });       
 });

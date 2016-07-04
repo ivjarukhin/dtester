@@ -11,8 +11,7 @@ gulp.task('connect', function () {
 
 gulp.task('index', function () {
   var target = gulp.src('index.html');
-  // It's not necessary to read the files (will speed up things), we're only after their paths: 
-  var sources = gulp.src(['*.js', 'controllers/*.js', 'css/*.css'], {read: false});
+  var sources = gulp.src(['*.js', 'controllers/*.js', 'directives/*.js', 'services/*.js', 'filters/*.js', 'css/*.css'], {read: false});
  
   return target.pipe(inject(sources))
     .pipe(gulp.dest(''));
